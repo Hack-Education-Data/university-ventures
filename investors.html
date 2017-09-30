@@ -6,15 +6,15 @@ title: University Ventures' Investors
 <h2>University Ventures' Investors</h2>
 
 <!-- Organizations -->
-{% assign investments = site.data.investments %}
-{% assign investments = investments | sort:"Name" %}
+{% assign investors = site.data.investors %}
+{% assign investors = investors | sort:"Name" %}
 
 <!-- Document -->
 
-{% for investment in investments %}
+{% for investor in investors %}
 
 <ul>
-<li><strong>{{ investment.Name }}</strong> ({{ investment.Date }}, {{ investment.Notes }})</li>
+<li><strong>{{ investor.Name }}</strong> ({{ investor.Date }}, {{ investor.Notes }})</li>
 </ul>
 
 {% endfor %}
